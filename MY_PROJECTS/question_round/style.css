@@ -1,0 +1,27 @@
+/*UDEMY COURCE LEARNING*/
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Sriracha&display=swap");
+
+/* SELECTOR SPECIFICITY 
+IN THIS SECTION AND H1 SELECTS THE SAME TEXT BUT USES BOTH OF THE SELECTORS*/
+
+.section-title {
+    font-family: "Sriracha", cursive;
+    color: #ff1b68;
+}
+
+body {
+    font-family: fantasy;
+}
+
+h1 {
+    color: #2ddf5c;
+    font-family: monospace;
+}
+
+/* INHERIT KEYWORD INHERITS THE PARENT PROPERTIES OF TAG */
+
+p {
+    font-family: inherit;
+}
