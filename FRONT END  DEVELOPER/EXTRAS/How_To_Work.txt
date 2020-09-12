@@ -1,0 +1,61 @@
+# HOW TO CREATE A FOLDER
+  
+      USE MANAGEMENT PROCESS
+ 1) Planning -
+         # first plan which files/.languages your project is needed. 
+         # then decide the resources or additional addition can be used in the project in future aspect.
+
+ 2) Organising - 
+         # Create the most needed folder such as css, js, content, where the major file can be stored to diffrentiate in categories and search easily.
+         # always create a gap to add the missing parts of files to specific folders.
+
+ 3)    
+
+
+
+# IMPORTANT (AJJEBOKAREB) POINTS
+ 1)       CSS file work for only one folder not other than that 
+
+ 2)       firstly describe data what to enter before thinking about style and places what to            fill
+
+
+
+# Emmit Secrets  
+ *          =     Used as multiplier to create no. of times perticular tag
+ +          =     Used to add no. of tags
+ >          =     Used to create children tags.
+ div.       =     Used to create div class 
+ div#       =     Used to create div id             
+
+
+
+
+ ) LI*4                       =     <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    
+
+ ) UL>LI*2                    =      <UL>
+                                          <LI></LI>
+                                          <LI></LI>
+                                    </UL>
+
+ ) DIV.FEATURE-ITEM>H1+P+H2   =     <DIV class="FEATURE-ITEM">
+                                          <H1></H1>
+                                          <P></P>
+                                          <H2></H2>
+                                    </DIV>
+
+
+
+
+BROWSER SUPPORT IMG SIZE 100/100
+
+
+
+
+
+
+
+
