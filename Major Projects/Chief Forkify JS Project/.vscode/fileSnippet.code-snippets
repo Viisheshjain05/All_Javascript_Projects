@@ -1,0 +1,109 @@
+{
+  /*******************************************************
+  
+  LOCAL FILE CHANGES HERE WILL EFFECT IN ALL TEMPLETS
+  
+  *******************************************************/
+
+  //      NAMING CONVENTION
+
+  /**********************************************************
+  EX - constf-Func, axios-Lib ...etc
+  
+    Languages - Vanilla JavaScript, (React, Typescript)
+    Refrence_Site_Help - https://code.visualstudio.com/docs/editor/userdefinedsnippets ;
+   
+  NAMING CONVENTION FOR VANELLA JAVASCRIPT CUSTOM SNIPPETS (CAMEL CASE)
+  ## First 3 letter of any words will be consider to be appropriate for Naming any Initial part(1/2) of snippet 
+  
+    1) cls   - Class
+    2) exp   - Export
+    3) def   - Default
+    4) mod   - Modules
+    5) req   - Require
+    6) async - Async 
+    7) ife   - if Else
+       
+  ***********************************************************/
+
+  //      IMPORTANT DIFFRENCE
+
+  /***********************************************************
+  
+    ( - ) To seprate all snippets with there Object__proto__ Type (2nd half NammingPart of Snippet) 
+    i.e. (Func, Obj, Arr, Cls, Lib, Loop(For, ForIn, ForOf, While), Cds, ...) 
+  
+  
+    //Aditionals To be added in case of Methods(Mtd ex - ArrMtd) Properties(Prop ex- ObjProp )
+    
+     * 1) Basic - Spl keyword OPTIONAL (Specifies the structure only of snippet Ex - constr-LibBasic )
+     * 2) Func  - functions
+     * 3) Cds   - Conditional Statements
+     * 4) Cls   - Classes
+     *
+  ***********************************************************/
+
+  //      CODE SHORTCUTS AND USABILITY
+
+  /***********************************************************
+  
+     * $1, $2 : specify cursor ,
+     * $0 : last Curser position
+     * ${1:foo} : Select the text written ,
+     * ${1:another ${2:placeholder}} : select 2 places, USE TAB TO EASILY CHANGE PLACE
+     * ${1|one,two,three|} : Add options in selections
+     * \n : To get a new line
+     *
+     *
+     *
+     *
+  
+     ***********************************************************
+     
+     //     CODE STARTS
+  
+     ***********************************************************/
+
+  "Async Class Function": {
+    "prefix": "expAsyncCls-Cls",
+    "body": [
+      "export default class ${1:ClassNameImportApiData} {\n\n        constructor(${2:param1}, param2) {\n          this.${2:param1} = ${2:param1};\n          this.${3:param2} = ${3:param2};\n       \n        }\n\n        async ${4:functionName}() {\n\n             try {\n            const apiId = await axios(\"API ADDRESS \");\n            console.log(apiId);\n\n          \n          } catch (e) {\n            console.log(e);\n          \n          }\n        }\n      }"
+    ],
+    "description": "Export Async Class With Axios Api and Try Catch Statement"
+  },
+
+  "Export The Function": {
+    "scope": "javascript,typescript",
+    "prefix": "constf-Func",
+    "body": ["const ${1:name} = (args) => {$0}"],
+    "description": "Const Arrow function"
+  },
+
+  "Import the require liabrary": {
+    "scope": "javascript,typescript",
+    "prefix": "constr-Lib",
+    "body": "const ${1:LiabName} = require(\"${1:LiabName}\");$2",
+    "description": "Import the require liabrary"
+  },
+
+  "Import the axios liabrary ": {
+    "scope": "javascript,typescript",
+    "prefix": "reqAxios-Lib",
+    "body": "const axios = require(\"axios\");$2",
+    "description": "Import axios liabrary used to convert api data into json without promise"
+  },
+
+  "Class export ": {
+    "scope": "javascript,typescript",
+    "prefix": "ife-Cds",
+    "body": "if (${1:condition}) {\n$2\n} ${3|else, else if(condition)|} {\n        \n};",
+    "description": "description"
+  },
+
+  "SnippetName": {
+    "scope": "javascript,typescript",
+    "prefix": "finalclass",
+    "body": "",
+    "description": "description"
+  }
+}
